@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Login from './pages/Login'
 import Hub from './pages/Hub'
 import Resources from './pages/Resources'
+import Clients from './pages/Clients'
 import Placeholder from './pages/Placeholder'
 import './App.css'
 
@@ -16,7 +17,7 @@ export default function App() {
           <Route index element={<Hub />} />
           <Route path="resources" element={<Resources />} />
           <Route path="scheduling" element={<Placeholder />} />
-          <Route path="clients" element={<Placeholder />} />
+          <Route path="clients" element={<Clients />} />
           <Route path="financials" element={<Placeholder />} />
           <Route path="compliance" element={<Placeholder />} />
         </Route>
