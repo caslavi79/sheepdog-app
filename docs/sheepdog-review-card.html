@@ -101,14 +101,19 @@
   }
   .front-bottom {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
     font-size: 9px;
     color: #444;
+  }
+  .front-bottom-row {
+    display: flex;
+    gap: 20px;
   }
 
   /* BACK */
@@ -212,8 +217,10 @@
   <img src="/sheepdog-wordmark-white.svg" alt="Sheepdog" class="front-logo">
   <div class="front-tagline">Event Security &middot; Mobile Bartending &middot; Staffing</div>
   <div class="front-bottom">
-    <span>(979) 204-0945</span>
-    <span>sheepdogtexas.com</span>
+    <div class="front-bottom-row">
+      <span>(979) 204-0945</span>
+      <span>sheepdogtexas.com</span>
+    </div>
     <span>sheepdogsecurityllc@gmail.com</span>
   </div>
 </div>
