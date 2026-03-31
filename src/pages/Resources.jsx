@@ -32,6 +32,18 @@ const resources = [
     category: 'Brand',
   },
   {
+    title: 'GBP Description & Keywords',
+    desc: 'Google Business Profile description, category recommendations, and target keyword list',
+    file: '/docs/deliverable-08-gbp-description-keywords.html',
+    category: 'Google Business',
+  },
+  {
+    title: 'GBP Photo Structure',
+    desc: 'Photo categories, shot list, naming conventions, and upload cadence',
+    file: '/docs/deliverable-09-gbp-photo-standards.html',
+    category: 'Google Business',
+  },
+  {
     title: 'Instagram Cold Outreach Strategy',
     desc: 'DM scripts, target lists, follow-up sequences for Events and Staffing',
     file: '/docs/instagram-cold-outreach-strategy.html',
