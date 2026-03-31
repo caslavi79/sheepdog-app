@@ -1,5 +1,35 @@
 const resources = [
   {
+    title: 'Color Palette',
+    desc: 'Primary, secondary, accent, and neutral colors with hex codes and usage guidance',
+    file: '/docs/Sheepdog_01_Color_Palette.html',
+    category: 'Brand',
+  },
+  {
+    title: 'Typography System',
+    desc: 'Heading and body fonts, type scale, sizes, weights, and spacing',
+    file: '/docs/Sheepdog_02_Typography_System.html',
+    category: 'Brand',
+  },
+  {
+    title: 'Visual Standards Guide',
+    desc: 'Logo usage, color application, imagery style, and file format rules',
+    file: '/docs/Sheepdog_03_Visual_Standards_Guide.html',
+    category: 'Brand',
+  },
+  {
+    title: 'Events Brand Identity',
+    desc: 'Positioning, voice, messaging pillars, and visual expression for Sheepdog Events',
+    file: '/docs/Sheepdog_04_Events_Brand_Identity.html',
+    category: 'Brand',
+  },
+  {
+    title: 'Staffing Brand Identity',
+    desc: 'Positioning, voice, messaging pillars, and visual expression for Sheepdog Staffing',
+    file: '/docs/Sheepdog_05_Staffing_Brand_Identity.html',
+    category: 'Brand',
+  },
+  {
     title: 'Instagram Cold Outreach Strategy',
     desc: 'DM scripts, target lists, follow-up sequences for Events and Staffing',
     file: '/docs/instagram-cold-outreach-strategy.html',
