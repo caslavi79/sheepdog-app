@@ -80,7 +80,7 @@
     background: #C23B22;
   }
   .front-logo {
-    width: 80px;
+    width: 200px;
     height: auto;
     margin-bottom: 12px;
     opacity: 0.9;
@@ -195,7 +195,7 @@
 
   @media print {
     body { background: none; padding: 0; gap: 0; }
-    .card { box-shadow: none; border-radius: 0; page-break-after: always; }
+    .card { box-shadow: none; border-radius: 0; page-break-after: always; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .print-bar, .label { display: none; }
   }
 </style>
@@ -214,6 +214,7 @@
   <div class="front-bottom">
     <span>(979) 204-0945</span>
     <span>sheepdogtexas.com</span>
+    <span>sheepdogsecurityllc@gmail.com</span>
   </div>
 </div>
 
