@@ -62,11 +62,10 @@ const resources = [
     category: 'Outreach',
   },
   {
-    title: 'Review QR Code',
-    desc: 'Print-ready QR code linking to Google review page',
-    file: null,
+    title: 'Review Card (Print-Ready)',
+    desc: '4x6 branded card with QR code placeholder. Pending Google verification.',
+    file: '/docs/sheepdog-review-card.html',
     category: 'Reviews',
-    coming: true,
   },
   {
     title: 'Review Staff Script',
