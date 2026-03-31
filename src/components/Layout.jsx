@@ -22,7 +22,6 @@ export default function Layout() {
           <NavLink to="/clients" className="sidebar-link">Clients</NavLink>
           <NavLink to="/financials" className="sidebar-link">Financials</NavLink>
           <NavLink to="/compliance" className="sidebar-link">Compliance</NavLink>
-          <NavLink to="/reviews" className="sidebar-link">Reviews</NavLink>
         </nav>
         <button onClick={handleLogout} className="sidebar-logout">Log Out</button>
       </aside>

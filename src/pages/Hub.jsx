@@ -45,13 +45,6 @@ const modules = [
     icon: icons.compliance,
     ready: false,
   },
-  {
-    title: 'Reviews',
-    desc: 'QR codes, scripts, templates, strategy',
-    path: '/reviews',
-    icon: icons.reviews,
-    ready: false,
-  },
 ]
 
 export default function Hub() {

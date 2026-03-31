@@ -19,7 +19,6 @@ export default function App() {
           <Route path="clients" element={<Placeholder />} />
           <Route path="financials" element={<Placeholder />} />
           <Route path="compliance" element={<Placeholder />} />
-          <Route path="reviews" element={<Placeholder />} />
         </Route>
       </Routes>
     </BrowserRouter>

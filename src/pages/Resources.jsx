@@ -49,6 +49,34 @@ const resources = [
     file: '/docs/staffing-outreach-targets.html',
     category: 'Outreach',
   },
+  {
+    title: 'Review QR Code',
+    desc: 'Print-ready QR code linking to Google review page',
+    file: null,
+    category: 'Reviews',
+    coming: true,
+  },
+  {
+    title: 'Review Staff Script',
+    desc: 'Word-for-word scripts for asking clients for Google reviews',
+    file: null,
+    category: 'Reviews',
+    coming: true,
+  },
+  {
+    title: 'Review Response Templates',
+    desc: 'Pre-built replies for positive, neutral, and negative Google reviews',
+    file: null,
+    category: 'Reviews',
+    coming: true,
+  },
+  {
+    title: 'Review Momentum Strategy',
+    desc: 'System for building and maintaining a steady flow of Google reviews',
+    file: null,
+    category: 'Reviews',
+    coming: true,
+  },
 ]
 
 const categories = [...new Set(resources.map(r => r.category))]
@@ -77,16 +105,24 @@ export default function Resources() {
           <div className={`resource-section-body ${open[cat] ? 'open' : ''}`}>
             <div className="resources-grid">
               {resources.filter(r => r.category === cat).map((res) => (
-                <a
-                  key={res.title}
-                  href={res.file}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="resource-card"
-                >
-                  <h3>{res.title}</h3>
-                  <p>{res.desc}</p>
-                </a>
+                res.coming ? (
+                  <div key={res.title} className="resource-card resource-card--locked">
+                    <h3>{res.title}</h3>
+                    <p>{res.desc}</p>
+                    <span className="resource-card-badge">Coming Soon</span>
+                  </div>
+                ) : (
+                  <a
+                    key={res.title}
+                    href={res.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resource-card"
+                  >
+                    <h3>{res.title}</h3>
+                    <p>{res.desc}</p>
+                  </a>
+                )
               ))}
             </div>
           </div>
