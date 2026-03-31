@@ -340,7 +340,7 @@ a { color: inherit; text-decoration: none; }
 
 /* RESOURCES */
 .resources-header {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .resources-header h1 {
@@ -357,18 +357,87 @@ a { color: inherit; text-decoration: none; }
   font-size: 15px;
 }
 
+.resource-section {
+  margin-bottom: 12px;
+}
+
+.resource-section-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--char);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--fh);
+  color: var(--white);
+  transition: border-color 0.2s;
+}
+
+.resource-section-header:hover {
+  border-color: rgba(255,255,255,0.12);
+}
+
+.resource-section-header.open {
+  border-radius: 6px 6px 0 0;
+  border-bottom-color: transparent;
+}
+
+.resource-section-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.resource-section-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--steel);
+  background: rgba(255,255,255,0.06);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.resource-section-chevron {
+  margin-left: auto;
+  color: var(--steel);
+  transition: transform 0.25s ease;
+}
+
+.resource-section-header.open .resource-section-chevron {
+  transform: rotate(180deg);
+}
+
+.resource-section-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.resource-section-body.open {
+  max-height: 800px;
+}
+
 .resources-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: rgba(22,22,22,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: none;
+  border-radius: 0 0 6px 6px;
 }
 
 .resource-card {
   display: block;
   background: var(--char);
   border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 8px;
-  padding: 24px;
+  border-radius: 6px;
+  padding: 20px;
   transition: transform 0.2s, border-color 0.2s;
 }
 
@@ -377,22 +446,13 @@ a { color: inherit; text-decoration: none; }
   border-color: var(--red);
 }
 
-.resource-category {
-  font-family: var(--fh);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--red);
-}
-
 .resource-card h3 {
   font-family: var(--fh);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin: 10px 0 8px;
+  margin-bottom: 8px;
 }
 
 .resource-card p {
