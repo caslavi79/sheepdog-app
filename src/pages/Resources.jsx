@@ -62,9 +62,15 @@ const resources = [
     category: 'Outreach',
   },
   {
-    title: 'Review Card (Print-Ready)',
-    desc: '4x6 branded card with QR code placeholder. Pending Google verification.',
+    title: 'Business Card (3.5 x 2)',
+    desc: 'Front and back business card with review QR code. Standard wallet size.',
     file: '/docs/sheepdog-review-card.html',
+    category: 'Reviews',
+  },
+  {
+    title: 'Review Flyer (4 x 6)',
+    desc: 'Larger print-ready review card for handouts and table displays.',
+    file: '/docs/sheepdog-review-flyer.html',
     category: 'Reviews',
   },
   {
