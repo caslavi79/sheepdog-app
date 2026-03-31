@@ -112,7 +112,7 @@ function AddClientModal({ onClose, onSaved }) {
           </div>
           <label className="modal-field">
             <span>Notes</span>
-            <textarea rows={3} value={form.notes} onChange={e => setForm({...form, notes: e.target.value})} placeholder="Any details about this client..." />
+            <textarea rows={1} onInput={e => { e.target.style.height = 'auto'; e.target.style.height = e.target.scrollHeight + 'px' }} value={form.notes} onChange={e => setForm({...form, notes: e.target.value})} placeholder="Any details about this client..." />
           </label>
           <div className="modal-actions">
             <button type="button" className="modal-btn-cancel" onClick={onClose}>Cancel</button>
@@ -237,7 +237,7 @@ function ClientDetail({ client, onClose, onUpdated }) {
                 </label>
               </div>
               <label className="modal-field"><span>Notes</span>
-                <textarea rows={3} value={form.notes || ''} onChange={e => setForm({...form, notes: e.target.value})} />
+                <textarea rows={1} onInput={e => { e.target.style.height = 'auto'; e.target.style.height = e.target.scrollHeight + 'px' }} value={form.notes || ''} onChange={e => setForm({...form, notes: e.target.value})} />
               </label>
               <div className="modal-actions">
                 <button type="button" className="modal-btn-cancel" onClick={() => { setForm(client); setEditing(false) }}>Cancel</button>
